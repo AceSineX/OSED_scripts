@@ -75,7 +75,7 @@ starting_char = "01"
 ending_character = "ff"
 if(len(sys.argv) == 2):
     path = sys.argv[1]
-    print(f"Looking for : {YELLOW}{sequence_expected}{RESET}")
+    print(f"Looking for    : {YELLOW}{sequence_expected}{RESET}")
 ### Custom Starting Argument
 elif(len(sys.argv) == 3):
     path = sys.argv[1]
@@ -87,7 +87,7 @@ elif(len(sys.argv) == 3):
     starting_char = sys.argv[2]
     print(proper_sequence[findPos(starting_char):findPos(starting_char)+2])
     sequence_expected = editSequence(starting_char)
-    print(f"Looking for : {YELLOW}{sequence_expected}{RESET}")
+    print(f"Looking for    : {YELLOW}{sequence_expected}{RESET}")
 ### Custom Starting And Ending Argument
 elif(len(sys.argv) == 4):
     path = sys.argv[1]
@@ -105,7 +105,7 @@ elif(len(sys.argv) == 4):
         quit()
     ending_character = sys.argv[3]
     sequence_expected = editSequence(starting_char, ending_character)
-    print(f"Looking for : {YELLOW}{sequence_expected}{RESET}\n")
+    print(f"Looking for    : {YELLOW}{sequence_expected}{RESET}\n")
 else:
     print("Incorrect amount of arguments, Please provide path to file")
     print("Usage: python3 badcharscheck.py /path/to/file")
